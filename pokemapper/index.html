@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  	<meta charset="utf-8">
+    <meta name="description" content="A map to show nearby Pokemon">
+    <meta name="keywords" content="Pokemon GO, Android, Map">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Syzygy Labs">
+		<title>PokéMapper- Pokemon Go Live Map</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css" media="screen">
+    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-invers menu-wrap">
+      <div class="navbar-header text-center">
+        <a class="navbar-brand logo-right" href="javascript:void(0)"><i class="mdi-image-timelapse"></i>PokéMapper</a>
+      </div>
+        <ul class="nav navbar-nav main-navigation">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#why">why</a></li>
+          <li><a href="#main-features">sideload APK</a></li>
+        </ul>
+        <button class="close-button" id="close-button">Close Menu</button>
+    </div>
+
+  	<div class="content-wrap">
+     <header class="hero-area" id="home">
+
+      <div class="container">
+          <div class="col-md-12">
+
+            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+              <div class="container">
+                <div class="navbar-header">
+                </div>
+                <div class="navbar-right">
+                  <button class="menu-icon"  id="open-button">
+                    <i class="mdi-navigation-menu"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="contents text-right">
+          <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">PokéMapper- Pokemon Go Live Map</h1>
+          <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">For Android</p>
+          <a href="https://play.google.com/store/apps/details?id=xyz.syzygylabs.mapperforpokemongo" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Google Play</a>
+          <a href="#main-features" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Dowload APK</a>
+          <a class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCxv1XFC4Gw7dmjoUlGvIYpMxeSoVw9k6LAYghENLXbBrLLyLrcHi4QFGrYezlZiL740Ib4m8Pltf+dlW0PxWqXeZI3wBbV38VNgoc/h6TNZTt8THXgVADkyz/RkPNvrYgLU+32wfKbGHyUVNVXbisCdf8SRzucnfBtPmsTC9/byDELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIZtamuDTPuheAgZDbj/mGQpjJpWEy1PGuWqoFk5TAHhD0qwHqrI7xbJoK9UI3OV7/4H7L2YJYroVyii0XelkngCwKXistXtRZJm3QZ4k8mX8jON8R859QSUR17Au8zqt1P7AM6pi1JZGbTNQGYVODhB3SrdjcxxOlT+AaKo6Us86a1/ObV7XLdFi/SOxzn2u29vOJKjbqL+LaPoGgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xNjA4MTYwMDIxMDZaMCMGCSqGSIb3DQEJBDEWBBQVvnbP/5uz7c8Gz4qLQmgMU9P7HzANBgkqhkiG9w0BAQEFAASBgBMWnWzPB0Mbf6WSGuFvdYJIIQjEy+HHFp7n5DcyHidcPItbShsHKf6ZJAY8T7hRUDcI8MdjHMV3C0fgE1+p3FKY2azQ7gVE5AWDFB2hpCjcR5xU1/WKJBhV2Ru4TNbH8oJXNamLej8PfPcJaQ/T71AhsK8jztah7V50sA8romeo-----END PKCS7-----
+          ">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </a>
+
+        </div>
+    </header>
+
+    <section id="why" class="section">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <img src="img/features/img1.png" alt="">
+          </div>
+
+          <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="pull-left content">
+              <h2>What Does PokéMapper Do?</h2>
+              <p>
+This app is a live map that finds all the Pokemons around you. In real-time, it shows the locations of gyms, pokestops and Pokemons. The app has support for multiple accounts so you can speedup the scanning process and find more pokemon quicker. Your are able to filter by Pokemon, color of gym, defense of gym and more. It also shows lured pokestops. This app uses real-time data to give you the most accurate data no matter where you are. It is not dependent on others being near you. It is a great way to find rare pokemon or plan out routes! All of this is presented in a beautiful material package, for quick easy use.
+              <ul class="list-item">
+                <li><i class="mdi-action-done"></i>Realtime</li>
+                <li><i class="mdi-action-done"></i>Multi-Account Scaning</li>
+                <li><i class="mdi-action-done"></i>Free</li>
+                <li><i class="mdi-action-done"></i>Filters</li>
+              </ul>
+              <a href="https://play.google.com/store/apps/details?id=xyz.syzygylabs.mapperforpokemongo" class="btn btn-lg btn-primary"> Get it on Google Play</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section id="main-features" class="section main-feature-gray">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="feature-item">
+              <h3 class="title-small">
+                Sideload the Newest APK
+              </h3>
+              <p>
+                Currently Google Play is now allowing this app to be updated. The current version of Play is working; however, you can install the newest version of this app by using an APK. To do this you must enable unknown sources. To access the Unknown Sources setting directly, press the menu icon or button from the Home screen and tap Settings. Select Security (Android OS 4.0+) or Applications (Android OS 3.0 and earlier). You may need to scroll down to see the Unknown Sources setting.
+              </p>
+              <h4>Patch Notes for Version 2.0.3: </h4>
+              <p>
+                *Fixed problem with new accounts
+              </p>
+              <a href="http://pokemapper.syzygylabs.xyz/pokemapper/newest.apk" class="btn btn-lg btn-primary">Download APK</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.mmenu.min.all.js"></script>
+    <script src="js/count-to.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/smooth-on-scroll.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+
+  </body>
+
+</html>
